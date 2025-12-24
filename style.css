@@ -1,11 +1,16 @@
 html {
     font-size: 14px;
 }
+
+/* KHÓA ZOOM + CHUẨN MOBILE */
 html, body {
-    touch-action: none;
+    touch-action: manipulation;
+    height: 100%;
 }
+
 body {
     margin: 0;
+    padding: env(safe-area-inset-top) 0 0 0; /* FIX iOS viền trắng */
     min-height: 100vh;
     overflow-x: hidden;
 
@@ -23,34 +28,30 @@ a {
     text-decoration: none;
 }
 
+/* KHUNG CHÍNH */
 .zhengti {
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 2rem 1.5rem 3rem;
     max-width: 750px;
 }
 
 .juzhong { text-align: center; }
 
-.juzuo {
-    text-align: left;
-    color: #f4e4c0;
-    font-size: 4rem;
-}
-
+/* MÃ NHÂN VIÊN */
 .juzuo1 {
     text-align: center;
     color: #f4e4c0;
     font-size: 3.5rem;
-    margin-top: 0;
-    margin-bottom: 3.5rem;
+    margin: 2.5rem 0;
 }
 
 .juzuo2 {
     color: #000;
     font-size: 3rem;
-    padding: 3rem 0 0;
+    padding-top: 2.5rem;
 }
 
+/* DÒNG MÔ TẢ DƯỚI */
 .dierhang {
     color: #f4e4c0;
     font-size: 2.8rem;
@@ -58,29 +59,31 @@ a {
     padding: 2rem 0 3rem;
 }
 
+/* THANH VÀNG – DÍNH CARD */
 .saomatishi {
     background-color: #fcbd20;
     color: #ffffdd;
     margin: 1.2rem 0 0;
-    padding: 5rem 4rem;
+    padding: 4.5rem 3rem;
     font-size: 3rem;
-    border-radius: 1rem;
+    border-radius: 1.2rem 1.2rem 0 0;
 }
 
 /* CARD TRẮNG */
 .erweima {
     background-color: #fff;
-    border-radius: 1rem;
-    height: auto;
+    border-radius: 0 0 1.2rem 1.2rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
+/* QR */
 .ewm {
     margin: 0.5rem 0 0;
     width: 580px;
     height: 580px;
 }
 
+/* ICON CHECK */
 .true {
     margin: 4rem 0 2rem;
     width: 260px;
@@ -94,7 +97,6 @@ a {
 .truetxt p.jinchang {
     font-size: 3.3em;
     margin: 0;
-    -webkit-font-smoothing: antialiased;
 }
 
 .truetxt p.riqi {
@@ -104,6 +106,7 @@ a {
 
 .zise { color: #96b0a5; }
 
+/* NÚT / CHỮ */
 .footsty {
     font-size: 2rem;
     padding: 2rem;
@@ -112,12 +115,12 @@ a {
 .shuaxinerweima {
     color: #686868;
     font-size: 2rem;
-    padding: 5rem 0 0;
+    padding-top: 3.5rem;
 }
 
 .yishengxiao {
     color: #2bd56b;
-    padding: 5rem 2rem 0;
+    padding-top: 3.5rem;
     font-size: 4.5rem;
 }
 
@@ -127,6 +130,7 @@ a {
     font-size: 3rem;
 }
 
+/* HAI CHẤM TRANG TRÍ */
 .yuan1 {
     float: left;
     margin: -1.5rem 0 0 -1.5rem;
@@ -141,7 +145,7 @@ a {
     width: 3rem;
     height: 3rem;
     background: #393a4e;
-    border-radius: 1.5rem;
+    border-radius: 50%;
 }
 
 /* HIỆU ỨNG NHẤP NHÁY */
